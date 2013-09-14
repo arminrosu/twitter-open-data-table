@@ -11,13 +11,11 @@ Originally developed for use in [jQuery Lifestream](https://github.com/christian
 To get the recent tweets of [@neiltyson](https://twitter.com/neiltyson):
 
 ``` SQL
-USE "http://armin.ro/twitter-open-data-table.xml" AS twitter;
+USE "http://arminrosu.github.io/twitter-open-data-table/table.xml" AS twitter;
 SELECT * FROM twitter WHERE screen_name = "neiltyson"
 ```
 
-View it in the [YQL Console](http://developer.yahoo.com/yql/console/#h=USE%20%22http%3A//armin.ro/twitter-open-data-table.xml%22%20AS%20twitter%3B%0ASELECT%20*%20FROM%20twitter%20WHERE%20screen_name%20%3D%20%22neiltyson%22).
-
-**Note:** The xml will move to github pages at some point.
+View it in the [YQL Console](http://query.yahooapis.com/v1/public/yql?q=USE%20%22http%3A%2F%2Farminrosu.github.io%2Ftwitter-open-data-table%2Ftable.xml%22%20AS%20twitter%3B%0ASELECT%20*%20FROM%20twitter%20WHERE%20screen_name%20%3D%20%22neiltyson%22&format=json).
 
 ## Response Format
 
@@ -48,7 +46,7 @@ Please note, **dates are expressed in Unix Time**, not the non-standard Twitter 
 
 ## Additional Files
 
-* *execute.js* - contains most of the code. for use in local development with [Mozilla Rhino](https://developer.mozilla.org/en/docs/Rhino). YQL support xpath selectors (via the `y` object) but rhino doesn't, but supports more advanced [E4X](https://developer.mozilla.org/en-US/docs/E4X) selectors. Hence this file contains both selectors, where necessary.
+* *execute.js* - contains most of the code. For use in local development with [Mozilla Rhino](https://developer.mozilla.org/en/docs/Rhino). YQL supports xpath selectors (via the `y` object). Rhino doesn't, but supports more advanced [E4X](https://developer.mozilla.org/en-US/docs/E4X) selectors. Hence this file contains both selectors, where necessary.
 * *results.html* - sample html containing the the results of the htmlQuery YQL query, for use in execute.js.
 
 ## Resources
