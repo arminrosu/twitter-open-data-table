@@ -15,7 +15,7 @@ USE "http://arminrosu.github.io/twitter-open-data-table/table.xml" AS twitter;
 SELECT * FROM twitter WHERE screen_name = "neiltyson"
 ```
 
-View it in the [YQL Console](http://query.yahooapis.com/v1/public/yql?q=USE%20%22http%3A%2F%2Farminrosu.github.io%2Ftwitter-open-data-table%2Ftable.xml%22%20AS%20twitter%3B%0ASELECT%20*%20FROM%20twitter%20WHERE%20screen_name%20%3D%20%22neiltyson%22&format=json).
+View it in the [YQL Console](http://y.ahoo.it/I+P1W).
 
 ## Response Format
 
